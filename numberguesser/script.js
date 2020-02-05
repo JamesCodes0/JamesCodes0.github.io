@@ -25,8 +25,7 @@ function compareGuesses(humanGuessInput, computerGuess, target) {
 function updateScore(winner) {
     if (winner == 'human') {
         return humanScore++;
-    } else (winner == "computer")
-    {
+    } else {
         return computerScore++;
     }
 }
