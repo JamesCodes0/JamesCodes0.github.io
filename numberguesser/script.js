@@ -8,11 +8,11 @@ function generateTarget() {
 }
 
 function compareGuesses(humanGuessInput, computerGuess, target) {
-    let humanDiff = (Math.abs(humanGuessInput - target))
-    let compDiff = (Math.abs(computerGuess - target))
-    console.log('Human Difference ' + humanDiff)
-    console.log('Computer Difference ' + compDiff)
-    console.log('Target ' + target)
+    let humanDiff = (Math.abs(humanGuessInput - target));
+    let compDiff = (Math.abs(computerGuess - target));
+    console.log('Human Difference ' + humanDiff);
+    console.log('Computer Difference ' + compDiff);
+    console.log('Target ' + target);
     if (humanDiff < compDiff) {
         return true;
     } if  (humanDiff > compDiff) {
@@ -24,11 +24,13 @@ function compareGuesses(humanGuessInput, computerGuess, target) {
 
 function updateScore(winner) {
     if (winner == 'human') {
-        return humanScore++
-    } else (winner == "computer") {
-        return  computerScore++
-   }
+        return humanScore++;
+    } else (winner == "computer")
+    {
+        return computerScore++;
+    }
+}
 
 function advanceRound() {
-    return currentRoundNumber++
+    return currentRoundNumber++;
 }
