@@ -25,12 +25,9 @@ function compareGuesses(humanGuessInput, target, computerGuess) {
 function updateScore(winner) {
     if (winner == 'human') {
         return humanScore++
-    } if (winner == "computer") {
+    } else (winner == "computer") {
         return  computerScore++
-   } else {
-
-}
-}
+   }
 
 function advanceRound() {
     return currentRoundNumber++
