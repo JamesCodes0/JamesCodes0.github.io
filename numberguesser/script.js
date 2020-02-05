@@ -7,10 +7,6 @@ function generateTarget() {
     return Math.floor(Math.random() * Math.floor(9));
 }
 
-console.log('Human input ' + humanGuessInput)
-console.log('Computer input ' + computerGuess)
-console.log('Target ' + target)
-
 function compareGuesses(humanGuessInput, target, computerGuess) {
     let humanDiff = (Math.abs(humanGuessInput - target))
     let compDiff = (Math.abs(computerGuess - target))
